@@ -97,7 +97,7 @@ let ucetambolunenler,
   siralisayilar,
   tekraredensayilar;
 
-
+//3a cozumu
 
 let enbuyuk = sayilar[0];
 let enkucuk = sayilar[0];
@@ -113,23 +113,36 @@ for (let i=1; i < sayilar.length; i++) {
 
 // 3b çözümü:
 
-/* kodlar buraya */
+let ucetambolunenler = [];
+sayilar.forEach((sayi) => {
+  if (sayi % 3 === 0) {
+    ucetambolunenler.push(sayi);
+  }
+});
 
 // 3c çözümü:
 
-/* kodlar buraya */
+let ucebolunenlerintoplami = ucetambolunenler.reduce((toplam, sayi) => toplam + sayi, 0);
 
 // 3d çözümü
 
-/* kodlar buraya */
+let besyuzdenkucuksayilar = sayilar.filter((sayi) => sayi < 500);
 
 // 3e çözümü
 
-/* kodlar buraya */
+let siralisayilar = besyuzdenkucuksayilar.sort((a,b) => a-b);
 
 // 3f çözümü
 
-/* kodlar buraya */
+let tekraredensayilar = [];
+let tekrarSayilari = {};
+sayilar.forEach((sayi) => {
+  if (tekrarSayilari[sayi]) {
+    tekrarSayilari[sayi]++;
+  } else {
+    tekrarSayilari[sayi] = 1;
+  }
+});
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
