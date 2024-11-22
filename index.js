@@ -97,9 +97,19 @@ let ucetambolunenler,
   siralisayilar,
   tekraredensayilar;
 
-// 3a çözümü
 
-/* kodlar buraya */
+
+let enbuyuk = sayilar[0];
+let enkucuk = sayilar[0];
+
+for (let i=1; i < sayilar.length; i++) {
+  if (sayilar[i] > enbuyuk) {
+    enbuyuk = sayilar[i];
+  }
+  if (sayilar[i] < enkucuk) {
+    enkucuk = sayilar[i];
+  }
+}
 
 // 3b çözümü:
 
